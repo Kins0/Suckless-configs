@@ -73,7 +73,7 @@ static const char *discordcmd[]  = { "discord", NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
-	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MEH,                          XK_f,      spawn,          {.v = firefoxcmd } },
 	{ MEH,                          XK_d,      spawn,          {.v = discordcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
@@ -83,7 +83,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_u,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_z,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_o,      setmfact,       {.f = +0.05} },
-	{ MODKEY,                       XK_Return, zoom,           {0} },
+	{ MODKEY|ShiftMask,             XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_q,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
